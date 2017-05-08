@@ -34,12 +34,12 @@ read -p "Press <enter> to continue"
 #use input, and send to application. Viewed how 411.com present search results page and mimicked URL
 firefox http://www.411.com/name/$fname-$lname/ &
 #timer otherwise firefox opens another instance instead of new tab
-sleep 2; firefox -new-tab http://www.peekyou.com/$fname"_"$lname &
-sleep1; firefox -new-tab http://www.addresses.com/people/$fname+$lname &
-sleep1; firefox -new-tab http://phonenumbers.addresses.com/people/$fname+$lname &
-sleep1; firefox -new-tab http://www.cvgadget.com/person/$fname/$lname &
-sleep1; firefox -new-tab http://pipl.com/search/?q=$fname+$lname &
-sleep1; firefox -new-tab http://www.spokeo.com/search?q=$fname+$lname &
-sleep1; firefox -new-tab http://www.zabasearch.com/people/$fname+$lname &
+sleep 4; firefox -new-tab http://www.peekyou.com/$fname"_"$lname &
+sleep 2; firefox -new-tab http://www.addresses.com/people/$fname+$lname &
+sleep 2; firefox -new-tab http://phonenumbers.addresses.com/people/$fname+$lname &
+sleep 2; firefox -new-tab http://www.cvgadget.com/person/$fname/$lname &
+sleep 2; firefox -new-tab http://pipl.com/search/?=$fname+$lname &
+sleep 2; firefox -new-tab http://www.spokeo.com/search?q=$fname+$lname &
+sleep 2; firefox -new-tab http://www.zabasearch.com/people/$fname+$lname &
 
 exit 1
